@@ -1,44 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
-<!--********** Copyright 2016 Roku Corp.  All Rights Reserved. **********-->
-
 <component name = "FetchJsonTask" extends = "Task" >
+
+  <script type="text/brightscript" uri="pkg:/components/FetchJsonTask.brs" />
 
   <interface>
     <field id = "contenturi" type = "uri" />
     <field id = "content" type = "node" />
   </interface>
-
-  <script type = "text/brightscript" >
-    <![CDATA[
-sub init()
-      m.top.functionName = "getContent"
-end sub
-
-sub getContent()
-    data = CreateObject("roSGNode", "ContentNode")
-
-    searchRequest = CreateObject("roUrlTransfer")
-    searchRequest.setURL(m.top.contenturi)
-    response = ParseJson(searchRequest.GetToString())
-
-    For Each event in response.events
-        dataItem = data.CreateChild("SimpleListItemData")
-        dataItem.name = event.name
-        dataItem.time = event.date
-        
-        if event.competitions[0].competitors[0].homeAway = "home" then
-             dataItem.home_score = event.competitions[0].competitors[0].score
-             dataItem.away_score = event.competitions[0].competitors[1].score
-        else
-             dataItem.home_score = event.competitions[0].competitors[1].score
-             dataItem.away_score = event.competitions[0].competitors[0].score
-        end if
-    End For
-
-    m.top.content = data
-end sub
-    ]]>
-  </script>
 
 </component>

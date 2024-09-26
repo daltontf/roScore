@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+
+<component name="ScoreAppSportListScene" extends="Scene" >
+
+  <script type="text/brightscript" uri="pkg:/components/ScoreAppSportListScene.brs" />
+
+  <children>
+    <MarkupList
+      id="ScoreMarkupList"
+      itemComponentName="ScoreListItem"
+      itemSize="[1080, 30]"
+      itemSpacing="[0, 10]"
+      translation="[100,100]"
+    />
+  </children>
+
+</component>

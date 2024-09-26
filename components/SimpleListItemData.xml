@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--********** Copyright 2016 Roku Corp.  All Rights Reserved. **********-->
+
+ 
+<component name="SimpleListItemData" extends="ContentNode">
+ 
+<interface> 
+  <field id="time" type="string" />
+  <field id="name" type="string" />
+  <field id="home_score" type="string"/>
+  <field id="away_score" type="string"/>
+</interface>
+
+</component>

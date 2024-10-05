@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="SoccerLeagues" extends="ContentNode">
+  <children>
+   <LeagueListItemData name="MLS" url="http://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard"/>   
+   <LeagueListItemData name="USL Championship" url="http://site.api.espn.com/apis/site/v2/sports/soccer/usa.usl.1/scoreboard"/>
+   <LeagueListItemData name="NWSL" url="http://site.api.espn.com/apis/site/v2/sports/soccer/usa.nwsl/scoreboard"/>
+   <LeagueListItemData name="English Premier League" url="http://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard"/> 
+   <LeagueListItemData name="German Bundesliga" url="http://site.api.espn.com/apis/site/v2/sports/soccer/ger.1/scoreboard"/>     
+  </children>
+</component>

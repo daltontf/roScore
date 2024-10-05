@@ -10,6 +10,8 @@ sub getContent()
   payload = searchRequest.GetToString()
   response = ParseJson(payload)
 
+  response.events.SortBy("date")
+
   For Each event in response.events
       dataItem = data.CreateChild("ScoreListItemData")
       dataItem.name = event.name

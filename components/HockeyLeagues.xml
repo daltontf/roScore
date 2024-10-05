@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="HockeyLeagues" extends="ContentNode">
+  <children>
+     <LeagueListItemData name="NHL" url="http://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard"/> 
+  </children>
+</component>

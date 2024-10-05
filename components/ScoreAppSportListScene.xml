@@ -3,15 +3,39 @@
 <component name="ScoreAppSportListScene" extends="Scene" >
 
   <script type="text/brightscript" uri="pkg:/components/ScoreAppSportListScene.brs" />
-
+  
   <children>
-    <MarkupList
-      id="ScoreMarkupList"
-      itemComponentName="ScoreListItem"
-      itemSize="[1080, 30]"
-      itemSpacing="[0, 10]"
-      translation="[100,100]"
-    />
-  </children>
+        <MarkupList
+          id="SportMarkupList"
+          itemComponentName="NameListItem"
+          itemSize="[250, 30]"
+          itemSpacing="[0, 10]"
+          translation="[100,50]"
+      >
+          <ContentNode role="content">
+            <NameListItemData name="Football"/>        
+            <NameListItemData name="Baseball"/>
+            <NameListItemData name="Basketball"/> 
+            <NameListItemData name="Hockey"/>          
+            <NameListItemData name="Soccer"/> 
+            <NameListItemData name="Misc"/> 
+          </ContentNode>
+        </MarkupList>
 
+        <MarkupList
+          id="LeagueMarkupList"
+          itemComponentName="NameListItem"
+          itemSize="[450, 30]"
+          itemSpacing="[0, 10]"
+          translation="[400,50]"
+        />
+
+        <MarkupList
+          id="ScoreMarkupList"
+          itemComponentName="ScoreListItem"
+          itemSize="[1050, 30]"
+          itemSpacing="[0, 10]"
+          translation="[100,300]"
+        />
+  </children>
 </component>

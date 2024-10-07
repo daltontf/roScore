@@ -11,6 +11,8 @@
           itemSize="[250, 30]"
           itemSpacing="[0, 10]"
           translation="[100,50]"
+          focusBitmapBlendColor = "0x99999999" 
+          numRows = "4"
       >
           <ContentNode role="content">
             <NameListItemData name="Football"/>        
@@ -28,14 +30,17 @@
           itemSize="[450, 30]"
           itemSpacing="[0, 10]"
           translation="[400,50]"
+          focusBitmapBlendColor = "0x99999999" 
+          numRows = "4"         
         />
 
         <MarkupList
           id="ScoreMarkupList"
           itemComponentName="ScoreListItem"
-          itemSize="[1050, 30]"
+          itemSize="[1080, 30]"
           itemSpacing="[0, 10]"
-          translation="[100,300]"
+          translation="[100,260]"
+          focusBitmapBlendColor = "0x99999999" 
         />
   </children>
 </component>

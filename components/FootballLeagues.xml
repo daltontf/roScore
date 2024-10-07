@@ -3,6 +3,6 @@
   <children>
     <LeagueListItemData name="NFL" url="http://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard"/>
     <LeagueListItemData name="UFL" url="http://site.api.espn.com/apis/site/v2/sports/football/ufl/scoreboard"/>
-    <LeagueListItemData name="NCAAF" url="http://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard?groups=80"/>   
+    <LeagueListItemData name="NCAAF" url="http://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard" query="groups=80"/>   
   </children>
 </component>

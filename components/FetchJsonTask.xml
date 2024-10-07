@@ -6,6 +6,8 @@
 
   <interface>
     <field id = "contenturi" type = "uri" />
+    <field id = "query" type="string"/>
+    <field id = "date_offset" type = "int" />
     <field id = "content" type = "node" />
   </interface>
 

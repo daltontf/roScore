@@ -4,6 +4,7 @@
   <interface> 
     <field id="name" type="string" />
     <field id="url" type="string"/>
+    <field id="query" type="string"/>
   </interface>
 
 </component>

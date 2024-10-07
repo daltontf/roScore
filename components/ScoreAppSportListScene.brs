@@ -3,6 +3,10 @@ function init()
     m.leagueMarkupList = m.top.findNode("LeagueMarkupList")
     m.scoreMarkupList = m.top.findNode("ScoreMarkupList")
 
+    m.fetchJsonTask = CreateObject("roSGNode", "FetchJsonTask")
+    m.fetchJsonTask.ObserveField("content", "setScoreContent")
+    m.fetchJsonTask.date_offset = 0  
+
     m.sportMarkupList.ObserveField("itemFocused", "sportFocused")
     m.sportMarkupList.SetFocus(true)
 end function
@@ -16,9 +20,9 @@ end sub
 
 sub leagueFocused()
     focused = m.leagueMarkupList.content.getChild(m.leagueMarkupList.itemFocused)  
-    m.fetchJsonTask = CreateObject("roSGNode", "FetchJsonTask")
-    m.fetchJsonTask.ObserveField("content", "setScoreContent")  
+
     m.fetchJsonTask.contenturi = focused.url
+    m.fetchJsonTask.date_offset = 0
     m.fetchJsonTask.control = "RUN"
 end sub
 
@@ -28,33 +32,37 @@ end sub
 
 function onKeyEvent(key as String, press as Boolean) as Boolean
   if press then
-    if (key = "back") then
+    if (key = "back") 
+      if m.scoreMarkupList.hasFocus()  
+        m.sportMarkupList.SetFocus(true)
+        return true
+      end if
       return false
-    else
-      if m.scoreMarkupList.hasFocus() and key = "left" 
+    end if  
+    if m.leagueMarkupList.hasFocus() 
+      if key = "left"
+        m.sportMarkupList.SetFocus(true)
+        return true
+      elseif key = "right"
+        m.scoreMarkupList.SetFocus(true)
+        return true
+      end if
+    end if    
+    if m.sportMarkupList.hasFocus() 
+      if key = "right"
         m.leagueMarkupList.SetFocus(true)
         return true
       end if
-      if m.leagueMarkupList.hasFocus() 
-        if key = "left"
-          m.sportMarkupList.SetFocus(true)
-          return true
-        end if
-        if key = "right"
-          m.scoreMarkupList.SetFocus(true)
-          return true
-        end if
-      end if
-      if m.sportMarkupList.hasFocus() 
-        if key = "right"
-          m.leagueMarkupList.SetFocus(true)
-          return true
-        end if
-        if key = "down"
-          m.scoreMarkupList.SetFocus(true)
-          return true
-        end if
-      end if   
+    end if
+    if m.scoreMarkupList.hasFocus() 
+      if key = "right"
+        m.fetchJsonTask.date_offset = m.fetchJsonTask.date_offset + 1
+        m.fetchJsonTask.control = "RUN"
+      elseif  key = "left"
+        m.fetchJsonTask.date_offset = m.fetchJsonTask.date_offset - 1
+        m.fetchJsonTask.control = "RUN"
+      end if  
+      return true
     end if
   end if
   return false

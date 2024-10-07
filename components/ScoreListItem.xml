@@ -8,11 +8,12 @@
   <script type="text/brightscript" uri="pkg:/components/ScoreListItem.brs" />
 
   <children> 
-    <LayoutGroup layoutDirection="horiz" vertAlignment="center" itemSpacings="20" translation="[0,25]" >
-      <Label id="time" font="font:SmallSystemFont" width="250" color="0xa0cc40ff" />
-      <Label id="name" font="font:SmallSystemFont" width="650" color="0xffff00ff" />
+    <LayoutGroup layoutDirection="horiz" vertAlignment="center" itemSpacings="10" translation="[0,25]" >
+      <Label id="time" font="font:SmallSystemFont" width="230" color="0xa0cc40ff" />
+      <Label id="name" font="font:SmallSystemFont" width="570" color="0xffff00ff" />
       <Label id="away_score" font="font:SmallSystemFont" width="50" color="0xffffffff" />
       <Label id="home_score" font="font:SmallSystemFont" width="50" color="0xffffffff" />
+      <Label id="status_detail" font="font:SmallSystemFont" width="230" color="0xffffffff" />
     </LayoutGroup>
   </children>
 

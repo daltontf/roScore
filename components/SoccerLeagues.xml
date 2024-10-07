@@ -5,6 +5,7 @@
    <LeagueListItemData name="USL Championship" url="http://site.api.espn.com/apis/site/v2/sports/soccer/usa.usl.1/scoreboard"/>
    <LeagueListItemData name="NWSL" url="http://site.api.espn.com/apis/site/v2/sports/soccer/usa.nwsl/scoreboard"/>
    <LeagueListItemData name="English Premier League" url="http://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard"/> 
-   <LeagueListItemData name="German Bundesliga" url="http://site.api.espn.com/apis/site/v2/sports/soccer/ger.1/scoreboard"/>     
+   <LeagueListItemData name="German Bundesliga" url="http://site.api.espn.com/apis/site/v2/sports/soccer/ger.1/scoreboard"/>  
+   <LeagueListItemData name="UEFA Champions League" url="http://site.api.espn.com/apis/site/v2/sports/soccer/uefa.champions/scoreboard"/>        
   </children>
 </component>

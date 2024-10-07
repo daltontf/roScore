@@ -3,9 +3,10 @@
  
   <interface> 
     <field id="time" type="string" />
-    <field id="name" type="string" />
-    <field id="home_score" type="string"/>
+    <field id="name" type="string" />   
     <field id="away_score" type="string"/>
+    <field id="home_score" type="string"/>
+    <field id="status_detail" type="string"/>
   </interface>
 
 </component>

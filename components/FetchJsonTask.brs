@@ -14,11 +14,16 @@ sub getContent()
   event_date = CreateObject("roDateTime")
 
   searchRequest = CreateObject("roUrlTransfer")
+
   if m.top.query <> invalid
     query = "?" + m.top.query + "&dates=" + queryDate
   else 
-    query = "?dates=" + queryDate
+    query = "?dates=" + queryDate  
   end if
+
+  if m.top.date_offset = 0
+    query = query + "&secs=" + date.AsSeconds().ToStr().Trim() 'discourage caching
+  end if  
 
   searchRequest.setURL(m.top.contenturi + query)
   payload = searchRequest.GetToString()

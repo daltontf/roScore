@@ -5,7 +5,12 @@
    <LeagueListItemData name="USL Championship" url="http://site.api.espn.com/apis/site/v2/sports/soccer/usa.usl.1/scoreboard"/>
    <LeagueListItemData name="NWSL" url="http://site.api.espn.com/apis/site/v2/sports/soccer/usa.nwsl/scoreboard"/>
    <LeagueListItemData name="English Premier League" url="http://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard"/> 
+   <LeagueListItemData name="English Championship" url="http://site.api.espn.com/apis/site/v2/sports/soccer/eng.2/scoreboard"/> 
    <LeagueListItemData name="German Bundesliga" url="http://site.api.espn.com/apis/site/v2/sports/soccer/ger.1/scoreboard"/>  
+   <LeagueListItemData name="Italian Serie A" url="http://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard"/> 
+   <LeagueListItemData name="French Ligue 1" url="http://site.api.espn.com/apis/site/v2/sports/soccer/fra.1/scoreboard"/> 
+   <LeagueListItemData name="Spanish LALIGA" url="http://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard"/> 
+   <LeagueListItemData name="Liga MX" url="http://site.api.espn.com/apis/site/v2/sports/soccer/mex.1/scoreboard"/> 
    <LeagueListItemData name="UEFA Champions League" url="http://site.api.espn.com/apis/site/v2/sports/soccer/uefa.champions/scoreboard"/>        
   </children>
 </component>

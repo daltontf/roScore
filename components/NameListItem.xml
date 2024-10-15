@@ -8,7 +8,7 @@
   <script type="text/brightscript" uri="pkg:/components/NameListItem.brs" />
 
   <children> 
-    <LayoutGroup layoutDirection="horiz" vertAlignment="center" itemSpacings="20" translation="[0,25]" >
+    <LayoutGroup layoutDirection="horiz" vertAlignment="bottom" itemSpacings="[0,0]" translation="[0,25]" >
       <Label id="name" font="font:SmallSystemFont" width="600" color="0xffff00ff" />
     </LayoutGroup>
   </children>

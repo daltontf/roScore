@@ -30,7 +30,7 @@ function onKeyEvent(key as String, press as Boolean) as Boolean
       end if
     end if
     if m.leagueMarkupList.hasFocus() 
-      if key = "right" or key = "OK"
+      if key = "OK"
         focused = m.leagueMarkupList.content.getChild(m.leagueMarkupList.itemFocused)  
         m.fetchJsonTask.contenturi = focused.url
         m.fetchJsonTask.date_offset = 0

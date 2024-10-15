@@ -3,5 +3,7 @@
   <children>
     <LeagueListItemData name="NBA" url="http://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard"/> 
     <LeagueListItemData name="WNBA" url="http://site.api.espn.com/apis/site/v2/sports/basketball/wnba/scoreboard"/> 
+    <LeagueListItemData name="NCAA - Men's" url="http://site.web.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/scoreboard" query="groups=50"/>   
+    <LeagueListItemData name="NCAA - Women's" url="http://site.web.api.espn.com/apis/site/v2/sports/basketball/womens-college-basketball/scoreboard" query="groups=50"/> 
   </children>
 </component>

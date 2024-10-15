@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?> 
 
-<component name="ScoreAppSportListScene" extends="Scene" >
+<component name="roScoreScene" extends="Scene" >
 
-  <script type="text/brightscript" uri="pkg:/components/ScoreAppSportListScene.brs" />
+  <script type="text/brightscript" uri="pkg:/components/roScoreScene.brs" />
   
   <children>
         <MarkupList
           id="SportMarkupList"
           itemComponentName="NameListItem"
           itemSize="[250, 30]"
-          itemSpacing="[0, 10]"
+          itemSpacing="[0, 8]"
           translation="[100,50]"
           focusBitmapBlendColor = "0x99999999" 
           numRows = "4"
@@ -28,7 +28,7 @@
           id="LeagueMarkupList"
           itemComponentName="NameListItem"
           itemSize="[450, 30]"
-          itemSpacing="[0, 10]"
+          itemSpacing="[0, 8]"
           translation="[400,50]"
           focusBitmapBlendColor = "0x99999999" 
           numRows = "4"         
@@ -37,8 +37,8 @@
         <MarkupList
           id="ScoreMarkupList"
           itemComponentName="ScoreListItem"
-          itemSize="[1080, 30]"
-          itemSpacing="[0, 10]"
+          itemSize="[1080, 25]"
+          itemSpacing="[0, 8]"
           translation="[100,260]"
           focusBitmapBlendColor = "0x99999999" 
         />

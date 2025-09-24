@@ -7,6 +7,7 @@
     <field id="away_score" type="string"/>
     <field id="home_score" type="string"/>
     <field id="status_detail" type="string"/>
+    <field id="national_broadcasts" type="string"/>
   </interface>
 
 </component>

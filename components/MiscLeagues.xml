@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<component name="MiscLeagues" extends="ContentNode">
-  <children>
-     <LeagueListItemData name="NCAA Womens Volleyball" url="http://site.web.api.espn.com/apis/site/v2/sports/volleyball/womens-college-volleyball/scoreboard"/> 
-  </children>
-</component>

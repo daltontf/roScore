@@ -52,6 +52,9 @@ sub getContent()
       if competition.status.type.name <> "STATUS_SCHEDULED"
         dataItem.status_detail = competition.status.type.shortDetail
       end if
+
+      broadcasts = event.broadcasts
+
   End For
 
   if data.getChildCount() = 0   

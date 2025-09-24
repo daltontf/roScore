@@ -9,11 +9,12 @@
 
   <children> 
     <LayoutGroup layoutDirection="horiz" vertAlignment="bottom" itemSpacings="[0, 0]" translation="[0,25]" >
-      <Label id="time" font="font:SmallestSystemFont" width="230" color="0xa0cc40ff" />
-      <Label id="name" font="font:SmallestSystemFont" width="570" color="0xffff00ff" />
+      <Label id="time" font="font:SmallestSystemFont" width="200" color="0xa0cc40ff" />
+      <Label id="name" font="font:SmallestSystemFont" width="530" color="0xffff00ff" />
       <Label id="away_score" font="font:SmallestSystemFont" width="50" color="0xffffffff" />
       <Label id="home_score" font="font:SmallestSystemFont" width="50" color="0xffffffff" />
-      <Label id="status_detail" font="font:SmallestSystemFont" width="230" color="0xffffffff" />
+      <Label id="status_detail" font="font:SmallestSystemFont" width="100" color="0xffffffff" />
+      <Label id="national_broadcasts" font="font:SmallestSystemFont" width="270" color="0xffffffff" />
     </LayoutGroup>
   </children>
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<component name="MiscLeagues" extends="ContentNode">
+<component name="CollegeLeagues" extends="ContentNode">
   <children>
      <LeagueListItemData name="NCAA Football (FBS)" url="http://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard" query="groups=80"/>   
      <LeagueListItemData name="NCAA Men's Basketball" url="http://site.web.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/scoreboard" query="groups=50"/>   

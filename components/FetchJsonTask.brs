@@ -32,6 +32,9 @@ sub getContent()
   response.events.SortBy("date")
 
   For Each event in response.events
+      if event.Count() = 0 then
+        continue for
+      end if
       dataItem = data.CreateChild("ScoreListItemData")
       dataItem.name = event.name
       
@@ -53,7 +56,11 @@ sub getContent()
         dataItem.status_detail = competition.status.type.shortDetail
       end if
 
-      broadcasts = event.broadcasts
+      if competition.broadcasts <> invalid and competition.broadcasts.Count() > 0 then
+        if competition.broadcasts[0].market = "national" then
+          dataItem.national_broadcasts = competition.broadcasts[0].names[0]
+        end if
+      end if
 
   End For
 

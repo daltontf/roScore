@@ -20,7 +20,8 @@
             <NameListItemData name="Basketball"/> 
             <NameListItemData name="Hockey"/>          
             <NameListItemData name="Soccer"/> 
-            <NameListItemData name="College"/> 
+            <NameListItemData name="NCAA Men"/> 
+            <NameListItemData name="NCAA Women"/> 
           </ContentNode>
         </MarkupList>
 

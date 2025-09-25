@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="NCAA Men Leagues" extends="ContentNode">
+  <children>
+     <LeagueListItemData name="Football (FBS)" url="http://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard" query="group=80"/>   
+     <!-- <LeagueListItemData name="Football (FCS)" url="http://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard" query="group=81"/>  -->
+     <LeagueListItemData name="Basketball" url="http://site.web.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/scoreboard" query="groups=50"/>  
+     <LeagueListItemData name="Soccer" url="http://site.web.api.espn.com/apis/site/v2/sports/soccer/usa.ncaa.m.1/scoreboard"/>
+     <LeagueListItemData name="Hockey" url="http://site.api.espn.com/apis/site/v2/sports/hockey/mens-college-hockey/scoreboard"/>    
+     <LeagueListItemData name="Baseball" url="http://site.api.espn.com/apis/site/v2/sports/baseball/college-baseball/scoreboard"/>   
+   </children>
+</component>

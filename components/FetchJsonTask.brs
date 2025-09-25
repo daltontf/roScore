@@ -15,7 +15,7 @@ sub getContent()
 
   searchRequest = CreateObject("roUrlTransfer")
 
-  if m.top.query <> invalid
+  if m.top.query <> invalid and m.top.query <> ""
     query = "?" + m.top.query + "&dates=" + queryDate
   else 
     query = "?dates=" + queryDate  
@@ -29,9 +29,16 @@ sub getContent()
   payload = searchRequest.GetToString()
   response = ParseJson(payload)
   
-  response.events.SortBy("date")
+    response.events.SortBy("date")
 
-  For Each event in response.events
+    if response = invalid 
+      dataItem = data.CreateChild("ScoreListItemData")
+      dataItem.time = date.asDateStringLoc("MM/dd/yy")
+      dataItem.name = "ERROR"
+      return 
+    end if
+
+    For Each event in response.events
       if event.Count() = 0 then
         continue for
       end if
@@ -61,8 +68,7 @@ sub getContent()
           dataItem.national_broadcasts = competition.broadcasts[0].names[0]
         end if
       end if
-
-  End For
+    End For
 
   if data.getChildCount() = 0   
     dataItem = data.CreateChild("ScoreListItemData")

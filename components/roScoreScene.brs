@@ -13,7 +13,7 @@ end function
 
 sub sportFocused() 
     focused = m.sportMarkupList.content.getChild(m.sportMarkupList.itemFocused) 
-    leagues = CreateObject("roSGNode", focused.name + "Leagues")
+    leagues = CreateObject("roSGNode", focused.name + " Leagues")
     m.leagueMarkupList.content = leagues
 end sub
 

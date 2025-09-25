@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<component name="BasketballLeagues" extends="ContentNode">
+<component name="Basketball Leagues" extends="ContentNode">
   <children>
     <LeagueListItemData name="NBA" url="http://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard"/> 
     <LeagueListItemData name="WNBA" url="http://site.api.espn.com/apis/site/v2/sports/basketball/wnba/scoreboard"/> 

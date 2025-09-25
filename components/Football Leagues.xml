@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="Football Leagues" extends="ContentNode">
+  <children>
+    <LeagueListItemData name="NFL" url="http://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard"/>
+    <LeagueListItemData name="UFL" url="http://site.api.espn.com/apis/site/v2/sports/football/ufl/scoreboard"/>
+    <LeagueListItemData name="NCAA (FBS)" url="http://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard" query="group=80"/>  
+    <!-- <LeagueListItemData name="NCAA (FCS)" url="http://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard" query="group=81"/>     -->
+  </children>
+</component>

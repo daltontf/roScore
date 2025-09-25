@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<component name="BaseballLeagues" extends="ContentNode">
+<component name="Baseball Leagues" extends="ContentNode">
   <children>
     <LeagueListItemData name="MLB" url="http://site.api.espn.com/apis/site/v2/sports/baseball/mlb/scoreboard"/> 
+    <LeagueListItemData name="NCAA" url="http://site.api.espn.com/apis/site/v2/sports/baseball/college-baseball/scoreboard"/> 
   </children>
 </component>

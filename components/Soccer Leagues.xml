@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<component name="SoccerLeagues" extends="ContentNode">
+<component name="Soccer Leagues" extends="ContentNode">
   <children>
    <LeagueListItemData name="MLS" url="http://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard"/>   
    <LeagueListItemData name="USL Championship" url="http://site.api.espn.com/apis/site/v2/sports/soccer/usa.usl.1/scoreboard"/>
@@ -11,6 +11,10 @@
    <LeagueListItemData name="French Ligue 1" url="http://site.api.espn.com/apis/site/v2/sports/soccer/fra.1/scoreboard"/> 
    <LeagueListItemData name="Spanish LALIGA" url="http://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard"/> 
    <LeagueListItemData name="Liga MX" url="http://site.api.espn.com/apis/site/v2/sports/soccer/mex.1/scoreboard"/> 
+   <LeagueListItemData name="NCAA Men" url="http://site.web.api.espn.com/apis/site/v2/sports/soccer/usa.ncaa.m.1/scoreboard"/>  
+   <LeagueListItemData name="NCAA Women" url="http://site.web.api.espn.com/apis/site/v2/sports/soccer/usa.ncaa.w.1/scoreboard"/> 
+   <LeagueListItemData name="U.S. Open Cup" url="http://site.api.espn.com/apis/site/v2/sports/soccer/usa.open/scoreboard"/>
+   <LeagueListItemData name="Leagues Cup" url="http://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.leagues.cup/scoreboard"/>
    <LeagueListItemData name="UEFA Europa League" url="http://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/scoreboard"/>
    <LeagueListItemData name="UEFA Champions League" url="http://site.api.espn.com/apis/site/v2/sports/soccer/uefa.champions/scoreboard"/>  
    <LeagueListItemData name="FIFA Club World Cup" url="http://site.api.espn.com/apis/site/v2/sports/soccer/fifa.cwc/scoreboard"/>          
